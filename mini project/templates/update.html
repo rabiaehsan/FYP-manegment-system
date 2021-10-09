@@ -1,0 +1,64 @@
+{%extends 'master.html'%}
+{%block content%}
+<div class= "container">
+    <h1 class='label label-success'> FYP PROJECT MANAGEMNT SYSTEM</h1>
+    
+    
+    <form class="form-horizontal" action="{{url_for('update', sno = sno)}}" method="post" >
+     
+      
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Group Leader</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Group Leader" name = "groupleader"value="{{stud.groupleader}}" required>
+
+
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Institution</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Institution" name = "institution"value="{{stud.institution}}"required >
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Name of Department</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Name of Department" name = "nameofdp" value="{{stud.nameofdp }}"required>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Head of Department </label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Head of Department " name = "headofdp"value="{{stud.headofdp}}" required>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Supervisor</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Supervisor" name = "psupervisor" value="{{stud.psupervisor}}"required>
+      </div>
+      <label for="inputAddress" class="form-label">No of group Members</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="No of group Members" name = "npfgroupmembers" value="{{stud.npfgroupmembers }}"required>
+      </div>
+      <div class= "container">
+      <label for="inputAddress" class="form-label">Program of study</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Program of study" name = "pgmofstudy"value="{{stud.pgmofstudy }}"required>
+      </div>
+      <div class= "container">
+      <label for="inputAddress" class="form-label">Project Title</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Program Title" name = "ptitle" value="{{stud.ptitle }}" required>
+      </div>
+      <div class= "container">
+      <label for="inputAddress" class="form-label">Project Discriotion</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Program Discriotion" name = "pdiscription" value="{{stud.pdiscription}}" required>
+      </div>
+      <div class= "container">
+    
+      <div class="col-12">
+        <br>
+        
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">submit</button>
+          </div>
+        
+      </br>
+      </div>
+      </form>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    {%endblock%}

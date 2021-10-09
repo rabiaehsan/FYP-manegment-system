@@ -1,0 +1,64 @@
+{%extends 'master.html'%}
+{%block content%}
+<div class= "container">
+    <h1 class='label label-success'> FYP PROJECT MANAGEMNT SYSTEM</h1>
+    <a class="btn btn-outline-secondary" href="{{url_for('newgroup')}}"> Show All The Project Information</a>
+    <form class="ROW G-3" method='POST' actions= {{url_for('newgroup')}}>
+      
+     
+      
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Group Leader</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Group Leader" name = "groupleader" required>
+
+
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Institution</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Institution" name = "institution" required >
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Name of Department</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Name of Department" name = "nameofdp" required>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Head of Department </label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Head of Department " name = "headofdp" required>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Supervisor</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Supervisor" name = "psupervisor" required>
+      </div>
+      <label for="inputAddress" class="form-label">No of group Members</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="No of group Members" name = "npfgroupmembers" required>
+      </div>
+      <div class= "container">
+      <label for="inputAddress" class="form-label">Program of study</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Program of study" name = "pgmofstudy" required>
+      </div>
+      <div class= "container">
+      <label for="inputAddress" class="form-label">Project Title</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Program Title" name = "ptitle" required>
+      </div>
+      <div class= "container">
+      <label for="inputAddress" class="form-label">Project Discriotion</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Program Discriotion" name = "pdiscription" required>
+      </div>
+      <div class= "container">
+    
+      <div class="col-12">
+        <br>
+        
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">submit</button>
+          </div>
+        
+      </br>
+      </div>
+      </form>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    {%endblock%}
